@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>thai phone</title>
+  </head>
+</head>
+<body>
+<p><b><span id="date">(Date)</span></b></p><br>
+<h><b><span id="time">(Time)</span> <span id="sec"></span></b></h1>
+<p><b><span id="timezone">(Timezone)</span></b></p><br>
+  <div class="slider" id="slider">
+    <button class="button" id="button"><a href="/home.html">Unlock</a></button>
+    <div class="text" id="text">Click the button to unlock</div>
+  </div>
+</body>
+<script>
+function supercedeZero(number) {
+  // Convert the number to a string
+  let string = number.toString();
+  // Check the length of the string
+  if (string.length === 1) {
+    // If it is one, add a zero before it
+    string = "0" + string;
+  }
+  // Return the string
+  return string;
+}
+function formatTimezoneOffset(offset) {
+  if (offset === 0) {
+    return "GMT";
+  }
+
+  let absOffset = Math.abs(offset);
+  let hours = Math.floor(absOffset / 60);
+  if (hours < 10) {
+    hours = "0" + hours;
+  }
+  let minutes = absOffset % 60;
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+  let sign = offset < 0 ? "+" : "-";
+  return "GMT" + sign + hours + ":" + minutes;
+}
+let d
+function setTime() {
+d = new Date(new Date().toLocaleString())
+document.getElementById("time").textContent = supercedeZero(d.getHours()) + ":" + supercedeZero(d.getUTCMinutes())
+
+document.getElementById("date").textContent = d.toDateString();
+
+document.getElementById("sec").textContent = supercedeZero(d.getSeconds())
+
+document.getElementById("timezone").textContent = formatTimezoneOffset(d.getTimezoneOffset())
+}
+
+
+setInterval(setTime, 1000);
+
+</script>
+</html>

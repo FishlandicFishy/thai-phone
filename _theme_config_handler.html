@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Applying Theme...</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p>Hold on while we're applying your theme.<br>
+  <b>Stuck on this screen?</b> Make sure you've allowed scripts.</p>
+  <br><br>
+  <p id="error"></p>
+  <script>
+    var queryString = window.location.search;
+    var params = new URLSearchParams(queryString);
+    var theme = params.get("theme");
+    if (theme) {
+      console.log(window.location.hostname + "/thai-phone/" + theme + ".html")
+      window.location.href = "/thai-phone/" + theme + ".html";
+    } else {
+      document.getElementById("error").innerHTML = "An error has occurred: No theme specified. <a href='configure.html'>Please configure the theme again.</a>";
+    }
+  </script>
+</body>
+
+</html>

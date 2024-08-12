@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>thai phone</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Configuration</h1>
+  <p>Select your preferred theme.</p>
+  <form id="selectform" action="_theme_config_handler.html" method="get">
+    <input type="radio" id="dark" name="theme" value="dark">
+    <label for="dark">Dark Theme<img src="images/themeicons/dark.png" style="width:16px;height:16px;"><br><p id="desc">The only correct option.</p></label>
+    <input type="radio" id="darkest" name="theme" value="darkest">
+    <label for="darkest">Darkest Theme<img src="images/themeicons/darkest.png" style="width:16px;height:16px;"><br><p id="desc">Dark theme with an absolute dark background. May hurt your eyes.</p></label><br>
+    <input type="radio" id="light" name="theme" value="light">
+    <label for="light">Light Theme<img src="images/themeicons/light.png" style="width:16px;height:16px;"><br><p id="desc">What have you done.</p></label><br>
+    <input type="radio" id="html" name="theme" value="html">
+    <label for="html">HTML Theme<br><p id="desc">Minimal CSS formatting. Looks trash.</p></label><br>
+    <input type="radio" id="iphnce" name="theme" value="iphnce">
+    <label for="iphnce">Iphnce Theme<img src="images/themeicons/iphnce.png" style="width:16px;height:16px;"><br><p id="desc">Unleash your inner iPhony by using this ripoff of a ripoff of a phone.</p></label><br>
+    <input type="radio" id="og" name="theme" value="og">
+    <label for="og">OG Theme<img src="images/themeicons/og.png" style="width:16px;height:16px;"><br><p id="desc">Scorch your eyeballs with this terrible design decision.</p></label><br>
+    <input type="radio" id="database" name="theme" value="database">
+    <label for="database">Database Theme<img src="images/themeicons/database.png" style="width:16px;height:16px;"><br><p id="desc">Scorch your eyeballs once again.</p></label>
+    <input type="submit" value="Apply">
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
