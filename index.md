@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html>
+# Welcome to the Thai Phone Project
+A useless impractical pseudo-phone OS, a ripoff of a ripoff of an actual phone, a ripoff of another concept, bad designing decisions, all in one place*
 
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>The Tai Phone Project</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+## What is the Thai Phone?
+The Thai Phone is a web-based pseudo-phone OS, aiming to imitate concepts like the Thai Phone (as in the show *Love Coming Home, Happiness Delivery*) and the infamous iPhone ripoffs, without spending a single dime on its budget.
 
-<body>
-  <h1>Welcome to the Thai Phone Project</h1>
-  <h3>A useless impractical pseudo-phone OS, a ripoff of a ripoff of an actual phone, a ripoff of another concept, bad designing decisions, all in one place</h3>
-  <p style="text-align:center;"><b><a href="configure.html">Configure the Thai Phone</a></b></p>
-  <p style="text-align:center;"><i>or</i></p>
-  <p style="text-align:center;"><b>Roll with the default options</b></p>
-  <hr>
-  <h2>What is the Thai Phone?</h2>
-  <p>The Thai Phone is a web-based pseudo-phone OS, aiming to imitate concepts like the Thai Phone (as in the show <i>Love Coming Home, Happiness Delivery</i>) and the infamous iPhone ripoffs, without spending a single dime on its budget.</p>
-  <p>Where possible, this project is released under CC0.</p>
-  <p>Noto Sans by Google is used.</p>
-  <script src="script.js"></script>
-</body>
-
-</html>
+Where possible, this project is released under CC0.
