@@ -20,17 +20,14 @@
   </div>
 </body>
 <script>
-function supercedeZero(number) {
-  // Convert the number to a string
+function supersedeZero(number) {
   let string = number.toString();
-  // Check the length of the string
   if (string.length === 1) {
-    // If it is one, add a zero before it
     string = "0" + string;
   }
-  // Return the string
   return string;
 }
+
 function formatTimezoneOffset(offset) {
   if (offset === 0) {
     return "GMT";
@@ -48,20 +45,17 @@ function formatTimezoneOffset(offset) {
   let sign = offset < 0 ? "+" : "-";
   return "GMT" + sign + hours + ":" + minutes;
 }
-let d
+
 function setTime() {
-d = new Date(new Date().toLocaleString())
-document.getElementById("time").textContent = supercedeZero(d.getHours()) + ":" + supercedeZero(d.getUTCMinutes())
-
-document.getElementById("date").textContent = d.toDateString();
-
-document.getElementById("sec").textContent = supercedeZero(d.getSeconds())
-
-document.getElementById("timezone").textContent = formatTimezoneOffset(d.getTimezoneOffset())
+  let d = new Date();
+  document.getElementById("time").textContent = supersedeZero(d.getHours()) + ":" + supersedeZero(d.getMinutes());
+  document.getElementById("date").textContent = d.toDateString();
+  document.getElementById("sec").textContent = supersedeZero(d.getSeconds());
+  document.getElementById("timezone").textContent = formatTimezoneOffset(d.getTimezoneOffset());
 }
 
-
 setInterval(setTime, 1000);
+
 
 </script>
 </html>
